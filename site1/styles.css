@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+    margin: 1em auto;
+}
+
+div.container {
+    width: 95%;
+    margin: 2em auto;
+}
+
+section {
+    padding: 1em;
+}
+
+article {
+    padding: 2.5em 1em 1em 1em;
+    border: 3px solid black;
+    position: relative;
+    background-color: #999999;;
+}
+
+h2 {
+    width: min-content;
+    padding: 0.1em 1em;
+    font-size: 1.25em;
+    outline: 3px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.chicky h2{
+    background-color: #D59897;
+}
+
+.beefy h2{
+    background-color: #C14543;
+}
+
+.sushi h2 {
+    background-color: #E5D198;
+}
+
+@media only screen and (min-width: 992px) {
+    section {
+        float: left;
+    }
+
+    .chicky, .beefy, .sushi{
+        width: 33.333%
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        float: left;
+    }
+
+    .chicky, .beefy {
+        width: 50%
+    }
+
+    .sushi {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    
+}
